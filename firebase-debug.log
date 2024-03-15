@@ -1,0 +1,22 @@
+[debug] [2024-03-01T10:35:46.230Z] ----------------------------------------------------------------------
+[debug] [2024-03-01T10:35:46.233Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Tech\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:create android lawyer_consultant_for_lawyers (android) --package-name=com.mks.lawyer --json --project=lawyers-7d828
+[debug] [2024-03-01T10:35:46.233Z] CLI Version:   13.0.3
+[debug] [2024-03-01T10:35:46.233Z] Platform:      win32
+[debug] [2024-03-01T10:35:46.233Z] Node Version:  v20.11.0
+[debug] [2024-03-01T10:35:46.233Z] Time:          Fri Mar 01 2024 14:35:46 GMT+0400 (Gulf Standard Time)
+[debug] [2024-03-01T10:35:46.233Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-01T10:35:46.238Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-01T10:35:46.239Z] > authorizing via signed-in user (fsrhilmak@gmail.com)
+[info] Create your ANDROID app in project lawyers-7d828:
+[debug] [2024-03-01T10:35:46.242Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/lawyers-7d828/androidApps [none]
+[debug] [2024-03-01T10:35:46.242Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/lawyers-7d828/androidApps {"displayName":"lawyer_consultant_for_lawyers (android)","packageName":"com.mks.lawyer"}
+[debug] [2024-03-01T10:35:46.984Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/lawyers-7d828/androidApps 409
+[debug] [2024-03-01T10:35:46.984Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/lawyers-7d828/androidApps {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2024-03-01T10:35:46.985Z] HTTP Error: 409, Requested entity already exists
+[debug] [2024-03-01T10:35:47.289Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\Tech\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Tech\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create Android app for project lawyers-7d828. See firebase-debug.log for more info.
